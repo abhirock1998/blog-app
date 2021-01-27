@@ -1,0 +1,23 @@
+.loader {
+  height: 60px;
+  width: 60px;
+  border-left: 8px solid blue;
+  border-bottom: 8px solid purple;
+  border-top: 8px solid yellow;
+  border-right: 8px solid orange;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30vh auto;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

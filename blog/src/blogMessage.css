@@ -1,0 +1,55 @@
+.blogMessage {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  /* min-width: min-content; */
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px -4px #000;
+  border: 1px solid lightgray;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.blogMessage .blogMessage__top {
+  flex-wrap: wrap;
+
+  display: flex;
+}
+.blogMessage .blogMessage__bottom {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogMessage .blogMessage__bottonComment {
+  display: flex;
+}
+.blogMessage .blogMessage__bottonComment input {
+  flex: 1;
+  padding: 0px 10px;
+  outline: none;
+}
+
+/* @media screen and (max-width: 768px) {
+  .blogMessage .blogMessage__bottom {
+    
+  }
+} */

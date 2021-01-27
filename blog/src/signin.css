@@ -1,0 +1,37 @@
+.sign {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 87.7vh;
+}
+.signIn .MuiButtonBase-root {
+  border-color: aqua;
+}
+.signDivider {
+  border-right: 1px solid aqua;
+  width: 2px;
+  height: 80vh;
+}
+.sign .signInArea h2,
+.sign .signUpArea h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sign .signInArea button,
+.sign .signUpArea button {
+  width: 100px;
+  box-shadow: 0px 4px 10px -4px #000;
+}
+
+@media screen and (max-width: 768px) {
+  .sign {
+    flex-direction: column;
+  }
+  .signDivider {
+    width: 80vw;
+    height: 0px;
+    margin: 20px 0px;
+    border-bottom: 1px solid aqua;
+  }
+}
